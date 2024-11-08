@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en" data-contexto="pause">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bear Down for Midterms</title>
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Covered+By+Your+Grace&family=Inter:wght@100..900&family=Modak&display=swap" rel="stylesheet">
+
+    <!-- Icons -->
+    <script src="https://kit.fontawesome.com/f31bcc2995.js" crossorigin="anonymous"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/pomodoros.css">
+</head>
+<body>
+    <div class="leftContainer">
+        <header class="titleHomepage">
+            <h2 class="title"><a id="homeLink" href="index.html">bear down</a></h2>
+            <h2 class="titleTwo"><a id="homeLink" href="index.html">for midterms</a></h2>    
+            <nav class="left">
+                <ul class="navbar">
+                    <li class="navItem"><a id="loginLink" href="login.html">login</a></li>
+                    <li class="navItem"><a id="villageLink" href="your-village.html"> your village</a></li>
+                    <li class="navItem"><a id="pomodoroLink" href="pomodoro.html"> pomodoro</a></li>
+                </ul>
+            </nav>
+        </header>
+    </div>
+    <section class="rightContainer">
+        <div class="pageTitles">
+            <h2 class="uiTitle"><a id="pomodoroLink" href="pomodoro.html">pomodoro timer</a></h2>
+            <h2 class="uiOff"><a id="villageLink" href="your-village.html"> your village</a></h2>
+        </div>
+        <div class="timerAndTasks">
+            <div class="pomodoroContainer">
+                <div class="pomodoroTimer">
+                    <div class="timerControls">
+                        <button class="timerBtn">focus</button>
+                        <button class="timerBtn">long rest</button>
+                        <button class="timerBtn">short rest</button>
+                    </div>
+                    <div class="timerDisplay">25:00</div>
+                    <div class="timerActions">
+                        <button class="actionBtn"> <i class="fa-solid fa-play fa-sm" style="color: #949769;"></i> &nbsp;  start </button>
+                        <button class="actionBtn"> <i class="fa-solid fa-music fa-s" style="color: #949769;"></i> &nbsp;  music</button>
+                    </div>
+                </div>
+                <div class="taskGoalContainer">
+                    <div class="taskList">
+                        <h3 class="sectionTitle">task list</h3>
+                        <form id="taskForm">
+                            <input type="text" id="taskInput" placeholder="Add a new task">
+                            <button type="submit">Add Task</button>
+                        </form>
+                        <ul id="taskList" class="tasks"></ul>
+                    </div>
+                    <div class="biggerGoal">
+                        <h3 class="sectionTitle">bigger goal</h3>
+                        <form id="goalForm">
+                            <input type="text" id="goalInput" placeholder="Add your goals">
+                            <button type="submit">Add Goal</button>
+                        </form>
+                        <ul id="goalList" class="tasks"></ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="../js/pomodoro.js"></script>
+    <script src="../js/pomodoro-crud.js"></script>
+</body>
+</html>

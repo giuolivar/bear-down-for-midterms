@@ -1,0 +1,113 @@
+:root {
+    --main-font: "Modak", system-ui;
+    --sub-font: "Covered By Your Grace", cursive;
+    --text-font: "Inter", sans-serif;
+    --color-bear-strong: #6B4A44;
+    --color-bear-medium: #D6BFB1;
+    --color-bear-light: #D6BFB1;
+    --color-green-strong: #949769;
+    --color-green-light: #C8CC92;
+    --color-purple: #876E83;
+    --color-pink: #A07178;
+    --color-pink-light: #F4DDD0;
+    --color-base: #F5F5F5;
+}
+
+body {
+    margin: 0;
+    height: 100vh;
+    background-color: var(--color-base);
+    background-image: url("../img/bg-img.svg");
+    image-rendering: optimizeQuality;
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    overflow: hidden;
+}
+
+.titleContainer {
+    position: relative; 
+}
+
+.titleContainer a {
+    text-decoration: none;
+    color: inherit;
+    transition: 1s;
+}
+
+
+.title {
+    text-align: center;
+    font-family: var(--main-font);
+    font-weight: 300;
+    color: var(--color-purple);
+    font-size: 45px;
+    margin: 2rem 0 3rem 0;
+    padding: 0;
+    position: relative; 
+}
+
+.titleTwo {
+    font-family: var(--sub-font);
+    font-size: 50px;
+    font-weight: 200;
+    color: var(--color-pink);
+    margin: 0 0 3rem 0;
+    padding: 0;
+    position: absolute; 
+    top: 2.5rem; 
+    left: 50%;
+    transform: translateX(-50%); 
+}
+
+.main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.navbar {
+    margin: 0;
+    padding: 1rem;
+    font-family: var(--text-font);
+    font-size: 12px;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: inherit;
+    transition: 1s;
+}
+
+.navbar-list {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    gap: 0.5rem;
+}
+
+.navItem, .navItem2 {
+    padding: 0.7rem;
+    text-decoration: none;
+    color: var(--color-pink);
+}
+
+.navItem:hover {
+    padding: 0.45rem;
+    margin: 0.25rem;
+    border-radius: 1rem;
+    background-color: var(--color-pink);
+    color: var(--color-pink-light);
+}
+
+.bearImg {
+    margin: 0;
+    padding: 0;
+    width: 400px;
+    image-rendering: optimizeQuality;
+    align-self: center;
+}
